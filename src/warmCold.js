@@ -1,28 +1,21 @@
 var $ = require("jquery"),
 	React = require("react"),
-	ReactDOM = require("react-dom");
+	ReactDOM = require("react-dom"),
+	TextWarmCold = require("./TextWarmCold");
 
 console.log("we have more to do than console.log things and things");
-
-// $("body").css("background-color","red");
 
 class WarmCold extends React.Component {
 	render() {
 		return (
 			<div>
-				Warmth-o-meter 
-				<NewComponent/> 
+				<TextWarmCold size={"90px"} />
+				<TextWarmCold size={"12px"} />
 			</div>
-		) 
-	}
-}
-
-class NewComponent extends React.Component {
-	render() {
-		return <div>New Component</div>
+		);
 	}
 }
 
 
 
-ReactDOM.render(<WarmCold/>, document.body);
+ReactDOM.render(<WarmCold />, document.body);
