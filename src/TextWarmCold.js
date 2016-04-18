@@ -3,7 +3,7 @@ var React = require("react");
 class TextWarmCold extends React.Component {
 	render() {
 		var style = {
-			fontSize:  this.props.size
+			fontSize: this.props.size
 		};
 
 		return (
