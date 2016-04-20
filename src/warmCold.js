@@ -5,6 +5,7 @@ var $ = require("jquery"),
 	ArrowsWarmCold = require("./ArrowsWarmCold");
 
 require("font-awesome-webpack");
+require("./WarmCold.scss");
 
 console.log("we have more to do than console.log things and things");
 
@@ -34,9 +35,8 @@ class WarmCold extends React.Component {
 	render() {
 		return (
 			<div>
+				<ArrowsWarmCold className={"arrow-color"} direction={"fa fa-arrow-up"} onClick={this.increaseFontSize.bind(this)} />
 				<TextWarmCold size={this.state.fontSize} />
-				<TextWarmCold size={"12px"} />
-				<ArrowsWarmCold direction={"fa fa-arrow-up"} onClick={this.increaseFontSize.bind(this)} />
 				<ArrowsWarmCold direction={"fa fa-arrow-down"} onClick={this.decreaseFontSize.bind(this)} />
 			</div>
 		);

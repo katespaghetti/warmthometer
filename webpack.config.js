@@ -42,7 +42,11 @@ var webpackConfig = {
 	    { 
 	    	test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
 	    	loader: "file-loader" 
-	    }
+	    },
+	    {
+        test: /\.scss$/,
+        loaders: ["style", "css", "sass"]
+      }
 	  ]
 	}
 	

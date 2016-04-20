@@ -13,7 +13,7 @@ var React = require("react");
 class ArrowsWarmCold extends React.Component {
 	render() {
 		return (
-			<div onClick={this.props.onClick}>
+			<div className={this.props.className} onClick={this.props.onClick}>
 				<i className={this.props.direction}></i>
 			</div>
 		);
